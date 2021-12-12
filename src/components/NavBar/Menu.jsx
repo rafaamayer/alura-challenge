@@ -1,9 +1,10 @@
 import styles from "./Menu.module.css"
+import { FormLabel } from "../Form/Form"
 
 export default function NavBar(){
     return (
         <nav>
-            
+            <FormLabel label="Menu"/>
             <div className={styles.nav}>
                 <div className={styles.navIcon}>
                     <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
