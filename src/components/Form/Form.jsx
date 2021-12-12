@@ -8,10 +8,18 @@ export function FormInput(props) {
     )
 }
 
+export function FormInputColor(props) {
+    return (
+        <>
+            <input type="color" className={`${styles.form} ${styles.formColor}`}/>
+        </>
+    )
+}
+
 export function FormTextArea(props) {
     return (
         <>
-            <textarea placeholder={props.text} className={`${styles.form} ${styles.formTextArea}`} />
+            <textarea placeholder={props.text} className={`${styles.form} ${styles.formTextArea}`} rows="5" />
         </>
     )
 }

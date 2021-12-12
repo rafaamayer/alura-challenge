@@ -1,9 +1,10 @@
 import logo from './img/logo-plataforma.png';
 import image from './img/image.png'
-import {  DropDownMenu } from './components/DropDown/DropDown.jsx'
-import { Button } from './components//Button/Button.jsx'
-import { FormInput, FormCode } from './components/Form/Form.jsx'
+import {  DropDownMenu } from './components/DropDown/DropDown'
+import { Button } from './components//Button/Button'
+import { FormInput, FormCode } from './components/Form/Form'
 import { Personalizacao, Projeto } from './components/Componentes/Componentes';
+import NavBar, { Menu } from './components/NavBar/Menu.jsx'
 
 function App() {
   return (
@@ -37,18 +38,18 @@ function App() {
 
       <div className="row">
 
-        <nav className="col-lg-4 d-none d-lg-block">
-          OI
-        </nav>
+        <div className="col-lg-3 d-none d-lg-block">
+          <NavBar />
+        </div>
 
-        <div className="col-12 col-lg-4">
+        <div className="col-12 col-lg-6">
           <section className="code-bg">
             <FormCode/>
           </section>
           <Button text="Vizualizar com o highlight" />
         </div>
 
-        <div className="d-none d-lg-block col-lg-4">
+        <div className="d-none d-lg-block col-lg-3">
           <Projeto />
           <Personalizacao />
         </div>

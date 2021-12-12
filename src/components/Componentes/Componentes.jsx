@@ -1,4 +1,4 @@
-import { FormLabel, FormSelect, FormInput, FormTextArea } from "../Form/Form"
+import { FormLabel, FormSelect, FormInput, FormTextArea, FormInputColor } from "../Form/Form"
 import { Button } from "../Button/Button"
 
 const lista = ["JavaScript", "Python", "Java"]
@@ -8,7 +8,7 @@ export function Personalizacao(props) {
             <FormLabel reference="linguagens" label="Personalização" />
                 <section>
                     <FormSelect id="linguagens" list={lista} />
-                    <FormInput typeInput="color" />
+                    <FormInputColor />
                 </section>
             <Button text="Salvar projeto"/>
         </>

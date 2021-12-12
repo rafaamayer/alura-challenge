@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.navIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    background-color: var(--secondary);
+    border-radius: 16px;
+
+    /*REMEMBER: IF URL IS NOT SELECTED THEN SET OPACITY TO 48%*/
+}
+
+.navTitle{
+    margin-left: 15px;
+}

@@ -65,3 +65,9 @@
 .formTextArea{
     height: 80px;
 }
+
+.formColor{
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+}
