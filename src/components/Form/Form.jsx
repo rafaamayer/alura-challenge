@@ -1,0 +1,51 @@
+import styles from './Form.module.css'
+
+export function FormInput(props) {
+    return (
+        <>
+            <input type={props.typeInput} placeholder={props.text} className={styles.form}/>
+        </>
+    )
+}
+
+export function FormTextArea(props) {
+    return (
+        <>
+            <textarea placeholder={props.text} className={`${styles.form} ${styles.formTextArea}`} />
+        </>
+    )
+}
+
+export function FormCode(props) {
+    return (
+        <span className={`${styles.formCode}`}>
+            <div className={styles.pseudos}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <textarea type={props.typeInput} className={styles.formCode} />
+            
+        </span>
+    )
+}
+
+export function FormSelect(props) {
+    return (
+        <select id={props.id} placeholder="Escolha sua linguagem" className={styles.form}>
+            {props.list.map(item => {
+                return (
+                    <option>{item}</option>
+                )
+            })}  
+        </select>
+    )
+}
+
+export function FormLabel(props) {
+    return (
+        <>
+            <label for={props.reference} className={styles.formLabel}>{props.label}</label>
+        </>
+    )
+}

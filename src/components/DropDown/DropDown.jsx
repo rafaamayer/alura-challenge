@@ -1,39 +1,3 @@
-export function FormInput(props) {
-    return (
-        <section>
-            <input type="text" placeholder={props.text} />
-        </section>
-    )
-}
-
-export function FormSelect(props) {
-    return (
-        <select id={props.id} placeholder="Escolha sua linguagem">
-            {props.list.map(item => {
-                return (
-                    <option>{item}</option>
-                )
-            })}  
-        </select>
-    )
-}
-
-export function FormLabel(props) {
-    return (
-        <>
-            <label for={props.reference}>{props.label}</label>
-        </>
-    )
-}
-
-export function FormButton(props) {
-    return (
-        <>
-            <button>{props.text}</button>
-        </>
-    )
-}
-
 export function DropDownMenu(props) {
     return (
         <div class="dropdown">

@@ -1,20 +1,27 @@
 import logo from './img/logo-plataforma.png';
 import image from './img/image.png'
-import { FormInput, FormSelect, FormLabel, FormButton, DropDownMenu } from './components/Components.jsx'
+import {  DropDownMenu } from './components/DropDown/DropDown.jsx'
+import { Button } from './components//Button/Button.jsx'
+import { FormInput, FormCode } from './components/Form/Form.jsx'
+import { Personalizacao, Projeto } from './components/Componentes/Componentes';
 
-const lista = ["JavaScript", "Python", "Java"]
 function App() {
   return (
     <div className="container">
-      <div className="row mb-5 header">
 
-        <div className="col-8 col-sm-4 col-md-2">
-          <img src={logo} width='100vw' />
+      {/* Header */}
+      <div className="row mb-5 my-3 header">
+
+        <div className="col-8 col-sm-3 col-md-2">
+          <img src={logo} width='100vw' alt='logo'/>
         </div>
 
-        <div className="col-2 col-sm-6 col-md-8">
+        <div className="col-2 col-sm-7 col-md-8">
           <i class="fas fa-search d-sm-none"></i>
-          <FormInput className="d-none d-sm-block form header-form" text="Busque por algo"/>
+          <div className="d-none d-sm-block header-form">
+            <FormInput text="Busque por algo"className=""/>
+          </div>
+          
         </div>
 
         <div className="col-2 col-sm-2 col-md-2 d-lg-none">
@@ -22,9 +29,11 @@ function App() {
         </div>
 
         <div className="col-lg-2 d-lg-block d-none d-sm-none d-md-none">
-          <img src={image} width="100vw" />
+          <img src={image} width="100vw" alt='perfil'/>
         </div>
       </div>
+
+      {/* Main */}
 
       <div className="row">
 
@@ -33,56 +42,28 @@ function App() {
         </nav>
 
         <div className="col-12 col-lg-4">
-          <section>
-            <FormInput text="Digite seu código"/>
+          <section className="code-bg">
+            <FormCode/>
           </section>
-          
-          <FormButton text="Salvar código" />
+          <Button text="Vizualizar com o highlight" />
         </div>
 
         <div className="d-none d-lg-block col-lg-4">
-
-          <label className="form-label">Seu Projeto</label>
-          <section>
-            <FormInput text="Nome do seu projeto" />
-            <FormInput text="Descrição do seu projeto" />
-          </section>
-
-          <label for="linguagens">Personalização</label>
-          <section>
-            <FormSelect id="linguagens" list={lista} />
-            <input type="color do seu projeto" />
-          </section>
-
-          <FormButton text="Salvar projeto"/>
+          <Projeto />
+          <Personalizacao />
         </div>
 
       </div>
 
       <div className="row">
         <div className="col-12 d-lg-none">
-          <FormLabel className="form-label" label="Seu Projeto" />
-
-          <section>
-            <FormInput text="Nome do seu projeto" className="form" />
-            <FormInput text="Descrição do seu projeto" />
-          </section>
+          <Projeto />
         </div>
       </div>
 
       <div className="row">
         <div className="col-12 d-lg-none">
-          <label for="linguagens">Personalização</label>
-          <section>
-              <FormSelect id="linguagens" list={lista} />
-              <FormInput text="Cor do seu projeto" />
-          </section>
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-12 d-lg-none">
-          <FormButton text="Salvar projeto"/>
+          <Personalizacao />
         </div>
       </div>
 
