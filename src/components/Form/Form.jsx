@@ -43,7 +43,7 @@ export function FormSelect(props) {
         <select id={props.id} placeholder="Escolha sua linguagem" className={styles.form}>
             {props.list.map(item => {
                 return (
-                    <option>{item}</option>
+                    <option className={styles.formSelected}>{item}</option>
                 )
             })}  
         </select>
