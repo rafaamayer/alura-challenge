@@ -25,6 +25,7 @@ export function FormTextArea(props) {
 }
 
 export function FormCode(props) {
+    const style = {paddingLeft: 30} 
     return (
         <span className={`${styles.formCode}`}>
             <div className={styles.pseudos}>
@@ -32,7 +33,7 @@ export function FormCode(props) {
                 <span></span>
                 <span></span>
             </div>
-            <textarea type={props.typeInput} className={styles.formCode} />
+            <textarea type={props.typeInput} className={styles.formCode} style={style}/>
             
         </span>
     )
