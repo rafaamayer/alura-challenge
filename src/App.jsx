@@ -46,7 +46,7 @@ function App() {
           <section className="code-bg">
             <FormCode/>
           </section>
-          <Button text="Vizualizar com o highlight" />
+          <Button text="Visualizar com o highlight" />
         </div>
 
         <div className="d-none d-lg-block col-lg-3">
