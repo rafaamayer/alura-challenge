@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export function DropDownMenu(props) {
     return (
         <div class="dropdown">
@@ -7,8 +9,17 @@ export function DropDownMenu(props) {
                 </svg>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><button class="dropdown-item" type="button">Editor de Código</button></li>
-                <li><button class="dropdown-item" type="button">Comunidade</button></li>
+                <li>
+                    <Link to="/">
+                        <button class="dropdown-item" type="button">Editor de Código</button>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/comunidade">
+                        <button class="dropdown-item" type="button">Comunidade</button>
+                    </Link>
+                </li>
+
             </ul>
         </div>
     )
