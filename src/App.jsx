@@ -4,7 +4,7 @@ import {  DropDownMenu } from './components/DropDown/DropDown'
 import { Button } from './components//Button/Button'
 import { FormInput, FormCode } from './components/Form/Form'
 import { Personalizacao, Projeto } from './components/Componentes/Componentes';
-import NavBar, { Menu } from './components/NavBar/Menu.jsx'
+import { NavBar } from './components/NavBar/Menu'
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import styles from "./Menu.module.css"
 import { FormLabel } from "../Form/Form"
 import { Link } from "react-router-dom"
 
-export default function NavBar(){
+export function NavBar(){
     return (
         <nav>
             <FormLabel label="Menu"/>
