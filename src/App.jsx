@@ -38,9 +38,9 @@ function App() {
 
       <div className="row">
 
-        <div className="col-lg-3 d-none d-lg-block">
+        <aside className="col-lg-3 d-none d-lg-block">
           <NavBar />
-        </div>
+        </aside>
 
         <div className="col-12 col-lg-6">
           <section className="code-bg">
@@ -49,10 +49,10 @@ function App() {
           <Button text="Visualizar com o highlight" />
         </div>
 
-        <div className="d-none d-lg-block col-lg-3">
+        <aside className="d-none d-lg-block col-lg-3">
           <Projeto />
           <Personalizacao />
-        </div>
+        </aside>
 
       </div>
 
