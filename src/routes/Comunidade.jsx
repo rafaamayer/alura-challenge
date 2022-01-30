@@ -42,8 +42,12 @@ function App() {
           <NavBar />
         </aside>
 
-      </div>
+        <div className="col-12 col-lg-6">
+            <h1>WIP</h1>
+        </div>
 
+      </div>
+      
     </div>
   );
 }
