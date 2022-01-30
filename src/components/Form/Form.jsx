@@ -33,7 +33,12 @@ export function FormCode(props) {
                 <span></span>
                 <span></span>
             </div>
-            <textarea type={props.typeInput} className={styles.formCode} style={style}/>
+            <textarea type={props.typeInput} className={styles.formCode} style={style} />
+            <pre>
+                <code class="language-javascript hljs">
+                    const a = "Hello Word"
+                </code>
+            </pre>
         </span>
     )
 }
