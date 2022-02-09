@@ -1,9 +1,7 @@
 import logo from '../img/logo-plataforma.png';
 import image from '../img/image.png'
 import {  DropDownMenu } from '../components/DropDown/DropDown'
-import { Button } from '../components//Button/Button'
-import { FormInput, FormCode } from '../components/Form/Form'
-import { Personalizacao, Projeto } from '../components/Componentes/Componentes';
+import { FormInput } from '../components/Form/Form'
 import { NavBar } from '../components/NavBar/Menu'
 
 function App() {
