@@ -1,7 +1,7 @@
 import { FormLabel, FormSelect, FormInput, FormTextArea, FormInputColor } from "../Form/Form"
 import { Button } from "../Button/Button"
 
-const lista = ["JavaScript", "Python", "Java"]
+const lista = ["javascript", "python", "java"]
 export function Personalizacao(props) {
     return (
         <>

@@ -1,3 +1,4 @@
+import Highlight from 'react-highlight'
 import styles from './Form.module.css'
 
 export function FormInput(props) {
@@ -26,6 +27,7 @@ export function FormTextArea(props) {
 
 export function FormCode(props) {
     const style = {paddingLeft: 30}
+
     return (
         <span className={`${styles.formCode}`}>
             <div className={styles.pseudos}>
@@ -33,7 +35,7 @@ export function FormCode(props) {
                 <span></span>
                 <span></span>
             </div>
-            <textarea type={props.typeInput} className={`${styles.formCode} code`} style={style} />
+            <textarea type={props.typeInput} className={`${styles.formCode}`} style={style} />
         </span>
     )
 }
